@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Trebuchet MS';
+}
+
+
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#f00, #f0f);  
+    clip-path: circle(20% at right 70%); 
+    z-index: -100;
+}
+
+body::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2196f3, #e91e63);  
+    clip-path: circle(20% at 10% 10%);
+    z-index: -100;
+}
+
+
+.app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.app__header img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.app__header h2{
+    font-size: 5rem;
+    text-align: center;
+}
+
+.app__container-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.app__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.app__container-link a{
+    color: #dc143c;
+    height: 2rem;
+    width: 14rem;
+    margin: 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: #dc143c solid 1px;
+    transition: all ease-in 0.2s;
+    padding: 1.5rem;
+}
+
+.app__container-link a:hover{
+    background: #dc143c;
+    color: #fff;
+    border: none;
+}
+
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    background: #000;
+    font-weight: 300;
+    position: fixed;
+    bottom: 0;
+    color: white;
+}
+
+.copyright a{
+  color: crimson;
+  text-decoration: none;
+  transition: 0.3s ease all;
+}
+
+
+.copyright a:hover{
+  color: white;
+  text-decoration: underline;
+}
+
+/* @media (max-width: 530px){
+    h2{
+        font-size: 62.5%;
+    }
+
+    .app__container-links{
+        flex-direction: column;
+    }
+} */
